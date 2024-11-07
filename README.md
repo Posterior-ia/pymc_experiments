@@ -1,61 +1,31 @@
-# pymc3_experiments
+# Pymc3 experiments
 Various experiments using the python pymc3 library for Bayesian learning.
 
+## Quick start 
+Install the virtual environment `posteriorpymc3`:
 
-
-```mermaid
-graph TD
-    A[MisconceptionName] --> B[**MisconceptionType-Model**]
-    B --> D[Modeling Error]
-    B --> E[Calculation Error]
-    B --> F[Interpretation Error]
-```
-
-# Basic ```poetry``` usage
-
-This short tutorial is a summary of the official ``poetry`` 
-documentation. For more information, see the 
-[official documentation](https://python-poetry.org/docs/basic-usage/).
-
-## Adding a dependency
-
-When you want to add a new dependency to the project, you can run the
-following command:
-
+### Windows
 ```bash
-poetry add <DEPENDENCY>
+> py -m pip install --upgrade pip
+> py -m pip install --user virtualenv
+> py -m venv posteriorpymc3
+> .\posteriorpymc3\Scripts\activate
+(posteriorpymc3) > pip install -r requirements.txt
 ```
 
-Where `<DEPENDENCY>` is the name of the dependency you want to add.
-
-In case you want to add a development dependency, you can run the following
-
+### Unix/macOS
 ```bash
-poetry add --dev <DEPENDENCY>
+> py -m pip install --upgrade pip
+> py -m pip install --user virtualenv
+> py -m venv posteriorpymc3
+. source posteriorpymc3/bin/activate
+> py -m pip install -r requirements.txt
 ```
 
-## Installing dependencies
 
-To install the dependencies of the project, you can run the following command:
+# TODO
 
-```bash
-poetry install
-```
+* [X] todo1
+* [X] todo2
+* [ ] todo3
 
-## Activating the virtual environment
-
-To activate the virtual environment, you can run the following command:
-
-```bash
-poetry shell
-```
-
-## Running a script
-
-To run a script, you can use the following command:
-
-```bash
-poetry run <SCRIPT>
-```
-
-Where `<SCRIPT>` is the name of the script you want to run.
