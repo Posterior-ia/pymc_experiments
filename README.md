@@ -23,7 +23,7 @@ Install the virtual environment `posteriorpymc3`:
 > py -m pip install --user virtualenv
 > py -m venv posteriorpymc3
 . source posteriorpymc3/bin/activate
-> py -m pip install -r requirements.txt
+> pip install -r requirements.txt
 ```
 
 # TODO
