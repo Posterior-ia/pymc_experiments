@@ -1,4 +1,4 @@
-# Pymc3 experiments
+# Pymc experiments
 
 Various experiments using the python pymc3 library for Bayesian learning.
 
@@ -25,9 +25,3 @@ Install the virtual environment `posteriorpymc3`:
 . source posteriorpymc3/bin/activate
 > pip install -r requirements.txt
 ```
-
-# TODO
-
-* [X] todo1
-* [X] todo2
-* [ ] todo3
