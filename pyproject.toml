@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
+classifiers = ["Private :: Do Not Upload"]
 dependencies = [
     "ipykernel>=6.29.5",
     "matplotlib>=3.9.3",
