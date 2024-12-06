@@ -6,11 +6,12 @@ Various experiments using the python pymc3 library for Bayesian learning.
 
 ### Installing `uv`
 
-The Python project manager selected is `uv`. To install the project 
-dependencies, run the following command:
+The Python project manager selected is `uv`.
+You can install it following the instructions in the 
+[documentation](https://docs.astral.sh/uv/getting-started/installation/).
+To install the project dependencies, run the following command:
 
 ```bash
-pip install uv
 uv sync
 ```
 
