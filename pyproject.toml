@@ -1,0 +1,17 @@
+[project]
+name = "pymc-experiments"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.9.3",
+    "notebook>=7.3.1",
+    "numpy>=2.1.3",
+    "pandas>=2.2.3",
+    "pymc>=5.15.0",
+    "scipy>=1.14.1",
+    "seaborn>=0.13.2",
+]

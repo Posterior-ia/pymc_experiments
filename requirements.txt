@@ -1,8 +1,0 @@
-notebook
-ipykernel
-numpy
-pandas
-matplotlib
-seaborn
-scipy
-pymc
