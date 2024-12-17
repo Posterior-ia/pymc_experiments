@@ -15,3 +15,6 @@ dependencies = [
     "scipy>=1.14.1",
     "seaborn>=0.13.2",
 ]
+
+[tool.uv.scripts]
+postinstall = "python -m ipykernel install --user --name=pymc-experiments --display-name 'pymc-experiments'"
