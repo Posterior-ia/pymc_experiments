@@ -18,5 +18,3 @@ dependencies = [
     "watermark",
 ]
 
-[tool.uv.scripts]
-postinstall = "python -m ipykernel install --user --name=pymc-experiments --display-name 'pymc-experiments'"
