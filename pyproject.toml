@@ -20,3 +20,8 @@ dependencies = [
 dev = [
     "pre-commit>=4.0.1",
 ]
+
+[tool.rstcheck]
+report_level = "WARNING"
+ignore_roles = ["src", "RFC"]
+
