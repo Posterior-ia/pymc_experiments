@@ -1,9 +1,20 @@
 default_stages:
   - pre-commit
   - pre-push
+
 fail_fast: true
+
 repos:
-- repo: https://github.com/google/pre-commit-tool-hooks
-  rev: v1.2.5
-  hooks:
-    - id: check-google-doc-style
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0  # Use the ref you want to point at
+    hooks:
+      - id: check-ast
+
+    # rstcheck - rst file checker
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: f30c4d170a36ea3812bceb5f33004afc213bd797
+    hooks:
+      - id: rstcheck
+        additional_dependencies: [ sphinx ]
+        exclude: testing
+        args: [ "--config", ".rstcheck.project.cfg" ]
