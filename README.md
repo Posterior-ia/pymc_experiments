@@ -14,6 +14,9 @@ To install the project dependencies, run the following command:
 ```bash
 uv sync
 ```
+### Example Notebook
+
+In the [`notebooks/first_pymc_example.ipynb`](notebooks/first_pymc_example.ipynb) file, you can find an implementation of the official PyMC linear regression tutorial. You can refer to the [tutorial](https://www.pymc.io/projects/docs/en/stable/learn/core_notebooks/GLM_linear.html) for more details.
 
 ### Project management
 
