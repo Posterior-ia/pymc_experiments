@@ -1,0 +1,5 @@
+
+- repo: https://github.com/google/pre-commit-tool-hooks
+  rev: vTODO # Use the rev you want to point at.
+  hooks:
+    - id: check-google-doc-style
