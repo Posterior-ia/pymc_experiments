@@ -18,7 +18,7 @@ uv sync
 ### Project management
 
 `uv` is a project manager that works in a similar way to `poetry`. 
-For instance, you can add or delete a dependence with the following 
+For example, you can add or delete a dependence with the following 
 commands:
 
 ```bash 
