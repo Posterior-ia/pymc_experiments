@@ -2,13 +2,20 @@ default_stages:
   - pre-commit
   - pre-push
 
-fail_fast: true
+fail_fast: false
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0  # Use the ref you want to point at
     hooks:
       - id: check-ast
+
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: f30c4d170a36ea3812bceb5f33004afc213bd797 # frozen: v6.2.4
+    hooks:
+      - id: rstcheck
+        additional_dependencies: [ sphinx ]
+        exclude: testing
 
   - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 24.8.0
@@ -19,4 +26,10 @@ repos:
       # pre-commit's default_language_version, see
       # https://pre-commit.com/#top_level-default_language_version
         language_version: python3.12
+        stages: [ pre-commit ]
+
+  - repo: "https://github.com/kynan/nbstripout"
+    rev: "0.8.1"
+    hooks:
+      - id: nbstripout
         stages: [ pre-commit ]
