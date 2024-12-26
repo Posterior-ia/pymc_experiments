@@ -1,9 +1,9 @@
 default_stages:
-  - commit
-  - push
+  - pre-commit
+  - pre-push
 fail_fast: true
 repos:
 - repo: https://github.com/google/pre-commit-tool-hooks
-  rev: vTODO # Use the rev you want to point at.
+  rev: v1.2.5
   hooks:
     - id: check-google-doc-style
